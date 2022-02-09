@@ -27,7 +27,7 @@ type ProxyConfig struct {
 	Config
 	ServerConfig    *ServerConfig
 	ClientConfig    *ClientConfig
-	DestinationPort string
+	DestinationPort int
 	// Specify upstream host by SSH username
 	FindUpstreamHook func(username string) (string, error)
 	// Fetch authorized_keys to confirm registration of the client's public key.
